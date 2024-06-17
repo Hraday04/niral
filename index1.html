@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ONLINE SHOP</title>
+        <style>
+           body{            
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin: 0;
+    padding: 0;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background: #e1dfdf;
+}
+:root{
+    --green:green;
+    --black:#130f40;
+    --light-color:#41de1e;
+    --box-shadow:0 .5rem 1rem rgb(6, 5, 5);
+    --border : .1rem  solid rgba(0,0,0.1);
+    --outline: .1rem solid rgba(0,0,0.1);
+}
+html{
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.header{
+position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding: 2rem 9%;
+text-decoration: none;
+border-color:50px black;
+background-color: #fffffff8;
+box-shadow: var(--box-shadow);
+}
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-display: 23%;
+    
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color:#130f40;
+}
+.header .navbar a:hover{
+    color: cadetblue;
+}
+.icon{
+    size: 0%;
+}
+.search-form{
+    border:5px  #07ffb9;
+    border-radius: 0.5rem;
+   width: max-content;
+   box-shadow: var(--box-shadow);
+   cursor: pointer;
+}
+.login-form{
+    border: 1px solid;
+    position: absolute;
+    top: 110%;
+    right: 2rem;
+    box-shadow: var(--box-shadow);
+padding: 0rem;
+border-radius: 2px;
+text-align: center;
+box-sizing: border-box;
+size: 1px;
+width: 30%;
+background-color: aliceblue;
+gap: 1.5rem;
+
+
+}
+.header .login-form h3{
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header .login-form .box{
+    font-size: small;
+    border: solid#130f40;
+    border-radius: 0%;
+    padding: 1rem;
+    width: 40%;
+}
+.header .login-form .btn{
+    background-color: darkseagreen;
+    border-color: #130f40;
+    padding: 1rem;
+}
+.btn:hover{
+    color: rgb(85, 0, 255);
+}
+@media(max-width:991px){
+    html{
+    font-size: 55%;   
+}
+}
+.Home{
+display: flex;
+justify-content: center;
+border:1px salmon;
+background: url(../fruits-and-vegetables_650x366_41486465566.webp) repeat-x;
+background-position: center;
+padding-top: 45rem;
+padding-bottom: 10rem;
+size: 0px;
+box-shadow: var(--box-shadow);
+
+}
+.Home .h3{
+    
+    padding-bottom: 65px;
+    padding-top: 30px;
+    background-position: center;
+    font-size: larger;
+    
+} 
+.Home .content{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 0px;
+    padding-top: 100px;
+} 
+ 
+
+.Home  span{
+    font-size: xx-large;
+    font-family:cursive;
+    color: rgb(9, 134, 136);
+}
+.heading{
+text-align: center;
+font-size: 3.5rem;
+}
+.heading span{
+    background-color: greenyellow;
+    text-shadow: #666;
+}
+.Features .container{
+    background-color: whitesmoke;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: large;
+}
+
+ 
+ .container img{
+    height: 10rem;
+    display: grid;
+    border: 2px;
+    box-sizing: border-box;
+
+}
+ .container {
+    height: 10rem;
+    display: grid;
+    border: 2px;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+    border: 2px solid black;
+    box-sizing: border-box;
+    box-shadow: var(--box-shadow);
+}
+.container .h3{
+    font-size: larger;
+}
+img{
+    height: 5rem;
+
+
+}
+.header .login-form.active{
+    right: 2rem;
+    transition: 4s linear;
+}
+.products span{
+    background-color: greenyellow;
+    text-shadow: #666;
+}
+.heading3{
+text-align: center;
+font-size: 3.5rem;
+}
+.slider img{
+    height: 10rem;
+}
+.products .slider{
+padding: 1rem;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+gap: 1rem;
+border: 2px black;
+}
+
+.products .slider .box {
+    border: 2px solid rgb(6, 14, 11);
+background: #ffffff;
+border-radius: 0rem;
+text-align: center;
+padding: 1rem ;
+outline-offset: -1rem;
+outline: var(--outline);
+margin-left: 0%;
+transition: linear;
+outline: var(--outline);
+box-sizing: 2rem;
+width: 12rem;
+height: 22rem;
+gap: 1rem;
+align-items: center;
+grid: 0cap;
+margin-left: 0px;
+}
+.products .slider .box .name{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: large;
+}
+.products .slider .box .price{
+    font-size: large;
+    font-family: monospace;
+}
+
+.products .slider .box img h1{
+    font-size: 2.5rem;
+    color: var(--light-color);
+    padding-left: 0%;
+}
+.products .slider .box {
+    background-position-x: left;
+   
+    overscroll-behavior-block: 2px;
+}
+
+.heading4{
+    text-align: center;
+    font-size: 3.5rem; 
+}
+.box1 span{
+    background-color: chartreuse;
+}
+.slider1 .photo {
+    border: 2px solid rgb(6, 14, 11);
+background: #ffffff;
+border-radius: 0rem;
+text-align: center;
+padding: 1rem ;
+outline-offset: -1rem;
+outline: var(--outline);
+margin-left: 0%;
+transition: linear;
+outline: var(--outline);
+box-sizing: 2rem;
+width: 11rem;
+height: 10rem;
+gap: 1rem;
+align-items: center;
+grid: 1.5rem;
+margin-left: 0px;
+grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+
+}
+.slider1{
+padding: 1rem;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+gap: .1rem;
+border: 2px solid black;
+}
+.search-form img{
+    height: 1.5rem;
+}
+</style>
+</head><body>
+        <header class="header">
+            <div class="niral" onmouseenter="console.log('mouse over')" onmouseleave="alert('gaya khol de')"
+            onscroll="prompt('you want to scroll','guest')" >
+            <img src="sesy.png">
+            <a type="#" class="logo"><i class="fa-brands fa-searchengin"></i>SHOPEASY</a>
+            <nav class="navbar">
+                
+                <a href="#home">Home</a>
+                <a href="#Features">Features</a>
+                <a href="#Products">Products</a>
+                <a href="#Categories">Categories</a>
+                <a href="#Review">Review</a> 
+                
+            </nav>
+        </div>
+            <div class="img" id="login-btn" >
+                <img src="pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396 - Copy (2).jpg"> 
+            </div>
+           
+            <form class="search-form">
+                <input type="search" id="search-box" placeholder="search item here:">
+                <label for="search-box" class="fa fa-searchengin"></label>
+                <img src="magnifying-search-icon-template-color-260nw-1703274088.webp">
+            </form>
+            <form  class="login-form">
+                <h3>login-now web-site</h3>
+                <input type="email" placeholder="enter your mail" class="box">
+                <input type="password" placeholder="enter password" class="box">
+                <input type="submit" value="login now" class="btn" onclick="alert('logged in')" >
+                <p>forget your password?<a href="#">click here</a></p>
+                <p>Don't have an account??  <a href="#">create now</a></p>
+            </form> 
+        </header>
+        <section>
+        <div class="Home" id="Home">
+            
+            <div class="content">
+                <h3><span>Fresh</span> and <span>trending</span> products for you</h3>
+               
+            </div>
+            
+        </div>
+    </section>
+    <section class="Features">
+        <h1 class="heading">OUR <span>FEATURES</span></h1>
+        <div class="container">
+            <img src="images.jpeg"> 
+            <h3>fresh and tranding</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> 
+        </div>
+       <div class="container">
+            <img src="unnamed.webp"> 
+            <h3>Easy payment</h3>
+            <p>A person can easily buy products from our web-site and can able to pay
+                from PAYTM,PhonePay,GPay. </p>
+        </div>
+        </div>
+
+        </section>
+<section class="products" id="products">
+    <h1 class="heading3">OUR <span>PRODUCTS</span></h1>
+<div class="slider">
+    <div class="box">
+    <img src="cabbage-image-cute-image-isolated-cabbage-vector-illustration_118339-5280.avif">
+    <h1 class="name">fresh cabbage</h1>
+    <h3 class="price">$90.00/-</h3>
+
+</div>
+<div class="slider">
+
+    <div class="box">
+    <img src="tomato.jpg">
+    <h1 class="name">fresh tometo</h1>
+    <h3 class="price">$89.00/-</h3>
+</div>
+</div>
+<div class="slider">
+    <div class="box">
+    <img src="bhindi.jpeg">
+    <h1 class="name">fresh bhindi</h1>
+    <h3 class="price">$120.00/-</h3>
+</div>
+</div>
+</section>
+
+<selection class="categories" id="categories">
+    <div class="box1"> 
+        <h1 class="heading4">PRODUCT  <span>CATEGORIES</span></h1>
+        <div class="slider1">
+        <div class="photo">
+            <img src="General-Tsao-Chicken_1.webp">
+            <h3 class="name">chinese</h3>
+            <a href="chinese.html">chinese</a>
+        </div>
+        <div class="slider1">
+        <div class="photo">
+            <img src="360_F_228281535_DbxC98AAXl0TOe2TcasxiUU53s7etqox.jpg">
+            <h3 class="name">punjabi</h3>
+            <a href="punjabi.html">punjabi</a>
+        </div>
+</div>
+<div class="slider1">
+        <div class="photo">
+            <img src="ai-generated-south-indian-food-idli-sambar-with-coconut-chutney-photo.jpg">
+            <h3 class="name" >south-indian</h3>
+            <a href="south-indian.html">south-indian</a>
+        </div>
+       
+    </div>
+</selection>
+        <script>
+console.log(document.body.firstChild);
+console.log(document.body.lastChild);
+console.log(document.body.childNodes);
+let arr=Array.from(document.body.childNodes);
+console.log(arr);
+document.body.style.background ="red"
+
+intwala.addeventlistner("onclick" , function(e) {
+    alert('agaya be khana khane apni site pe!!!')
+})
+
+
+        </script>
+    </body>
+</html>
